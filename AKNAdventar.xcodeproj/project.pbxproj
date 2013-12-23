@@ -22,6 +22,10 @@
 		75874CFB18687AFC00887E55 /* AKNAdventarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75874CFA18687AFC00887E55 /* AKNAdventarTests.m */; };
 		75874D0A18687FD500887E55 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75874D0818687FD500887E55 /* Model.xcdatamodeld */; };
 		75874D0B18687FD500887E55 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75874D0818687FD500887E55 /* Model.xcdatamodeld */; };
+		75874D13186883D300887E55 /* _AKNEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 75874D10186883D300887E55 /* _AKNEntry.m */; };
+		75874D14186883D300887E55 /* _AKNEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 75874D10186883D300887E55 /* _AKNEntry.m */; };
+		75874D15186883D300887E55 /* AKNEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 75874D12186883D300887E55 /* AKNEntry.m */; };
+		75874D16186883D300887E55 /* AKNEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 75874D12186883D300887E55 /* AKNEntry.m */; };
 		C70E1FD3F2F5434EA219E45F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AEE8C48781E43D28AE7E583 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +59,10 @@
 		75874CF818687AFC00887E55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		75874CFA18687AFC00887E55 /* AKNAdventarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKNAdventarTests.m; sourceTree = "<group>"; };
 		75874D0918687FD500887E55 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		75874D0F186883D300887E55 /* _AKNEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _AKNEntry.h; path = Model/_AKNEntry.h; sourceTree = SOURCE_ROOT; };
+		75874D10186883D300887E55 /* _AKNEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _AKNEntry.m; path = Model/_AKNEntry.m; sourceTree = SOURCE_ROOT; };
+		75874D11186883D300887E55 /* AKNEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKNEntry.h; path = Model/AKNEntry.h; sourceTree = SOURCE_ROOT; };
+		75874D12186883D300887E55 /* AKNEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKNEntry.m; path = Model/AKNEntry.m; sourceTree = SOURCE_ROOT; };
 		7AEE8C48781E43D28AE7E583 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -118,6 +126,8 @@
 		75874CD518687AFC00887E55 /* AKNAdventar */ = {
 			isa = PBXGroup;
 			children = (
+				75874D0C1868837700887E55 /* Model */,
+				75874D0D1868837F00887E55 /* ViewController */,
 				75874CDE18687AFC00887E55 /* AKNAppDelegate.h */,
 				75874CDF18687AFC00887E55 /* AKNAppDelegate.m */,
 				75874D0818687FD500887E55 /* Model.xcdatamodeld */,
@@ -155,6 +165,32 @@
 				75874CF718687AFC00887E55 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75874D0C1868837700887E55 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				75874D17186883DC00887E55 /* Machine (mogenerator) */,
+				75874D11186883D300887E55 /* AKNEntry.h */,
+				75874D12186883D300887E55 /* AKNEntry.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		75874D0D1868837F00887E55 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		75874D17186883DC00887E55 /* Machine (mogenerator) */ = {
+			isa = PBXGroup;
+			children = (
+				75874D0F186883D300887E55 /* _AKNEntry.h */,
+				75874D10186883D300887E55 /* _AKNEntry.m */,
+			);
+			name = "Machine (mogenerator)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,7 +326,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75874D15186883D300887E55 /* AKNEntry.m in Sources */,
 				75874CDC18687AFC00887E55 /* main.m in Sources */,
+				75874D13186883D300887E55 /* _AKNEntry.m in Sources */,
 				75874CE018687AFC00887E55 /* AKNAppDelegate.m in Sources */,
 				75874D0A18687FD500887E55 /* Model.xcdatamodeld in Sources */,
 			);
@@ -301,7 +339,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				75874CFB18687AFC00887E55 /* AKNAdventarTests.m in Sources */,
+				75874D16186883D300887E55 /* AKNEntry.m in Sources */,
 				75874D0B18687FD500887E55 /* Model.xcdatamodeld in Sources */,
+				75874D14186883D300887E55 /* _AKNEntry.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
