@@ -55,15 +55,15 @@
                                             <segue destination="6gX-Vg-yHg" kind="push" id="RTJ-i2-zCb"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="OwJ-eD-cen" style="IBUITableViewCellStyleDefault" id="AW3-NO-tgh">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="OwJ-eD-cen" style="IBUITableViewCellStyleDefault" id="AW3-NO-tgh">
                                         <rect key="frame" x="0.0" y="152" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AW3-NO-tgh" id="4T9-Lt-fSP">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Great Good Example" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OwJ-eD-cen">
-                                                    <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -71,6 +71,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="b6E-Ij-Lfn" kind="push" id="8l1-an-qci"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -80,7 +83,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRm-mn-5L5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-522" y="283"/>
+            <point key="canvasLocation" x="-554" y="283"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uhn-yP-bSc">
@@ -97,7 +100,7 @@
             </objects>
             <point key="canvasLocation" x="-1088" y="291"/>
         </scene>
-        <!--Good Table View Controller-->
+        <!--Good Table View Controller - Good Example-->
         <scene sceneID="e0i-u7-W9l">
             <objects>
                 <tableViewController id="6gX-Vg-yHg" customClass="AKNGoodTableViewController" sceneMemberID="viewController">
@@ -149,11 +152,69 @@
                             <outlet property="delegate" destination="6gX-Vg-yHg" id="eJ5-LW-sKg"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="qxV-u0-YwR"/>
+                    <navigationItem key="navigationItem" title="Good Example" id="qxV-u0-YwR"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gfo-Ze-e9A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10" y="508"/>
+            <point key="canvasLocation" x="0.0" y="283"/>
+        </scene>
+        <!--Great Good Table View Controller - Great Good Example-->
+        <scene sceneID="Rxo-Rc-V7C">
+            <objects>
+                <tableViewController id="b6E-Ij-Lfn" customClass="AKNGreatGoodTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="WxG-yW-4Y0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="i1i-ZC-UGH" customClass="AKNGreatGoodTableViewCell">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i1i-ZC-UGH" id="SZH-eW-2zn">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトル1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="wJV-zw-GUd">
+                                            <rect key="frame" x="20" y="11" width="77" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="77" id="kch-C4-Zkc"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本文1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="htb-Eo-SmK">
+                                            <rect key="frame" x="105" y="11" width="195" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="wJV-zw-GUd" firstAttribute="centerY" secondItem="SZH-eW-2zn" secondAttribute="centerY" id="JSI-lD-xf0"/>
+                                        <constraint firstItem="wJV-zw-GUd" firstAttribute="leading" secondItem="SZH-eW-2zn" secondAttribute="leading" constant="20" symbolic="YES" id="bnn-Si-0Dq"/>
+                                        <constraint firstItem="wJV-zw-GUd" firstAttribute="baseline" secondItem="htb-Eo-SmK" secondAttribute="baseline" id="chj-hP-bPj"/>
+                                        <constraint firstItem="htb-Eo-SmK" firstAttribute="leading" secondItem="wJV-zw-GUd" secondAttribute="trailing" constant="8" symbolic="YES" id="yQ2-zR-02J"/>
+                                        <constraint firstAttribute="trailing" secondItem="htb-Eo-SmK" secondAttribute="trailing" constant="20" symbolic="YES" id="yfz-eY-s4d"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="bodyLabel" destination="htb-Eo-SmK" id="qfq-sL-OU5"/>
+                                    <outlet property="titleLabel" destination="wJV-zw-GUd" id="DW3-Zy-e5i"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="b6E-Ij-Lfn" id="UuE-z6-5Yj"/>
+                            <outlet property="delegate" destination="b6E-Ij-Lfn" id="5H3-1g-nFu"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Great Good Example" id="cOu-3w-hdF"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VcH-cN-T4x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32" y="1228"/>
         </scene>
         <!--Bad Table View Controller - Bad Example-->
         <scene sceneID="6Ui-aD-E90">
@@ -207,7 +268,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PUD-Ly-aN0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="-253"/>
+            <point key="canvasLocation" x="0.0" y="-429"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
