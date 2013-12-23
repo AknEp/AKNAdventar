@@ -5,6 +5,7 @@
 
 const struct AKNEntryAttributes AKNEntryAttributes = {
 	.body = @"body",
+	.createdAt = @"createdAt",
 	.title = @"title",
 };
 
@@ -48,6 +49,13 @@ const struct AKNEntryFetchedProperties AKNEntryFetchedProperties = {
 
 
 @dynamic body;
+
+
+
+
+
+
+@dynamic createdAt;
 
 
 

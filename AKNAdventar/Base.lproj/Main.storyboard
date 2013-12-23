@@ -126,21 +126,46 @@
             </objects>
             <point key="canvasLocation" x="10" y="508"/>
         </scene>
-        <!--Table View Controller - Bad Example-->
+        <!--Bad Table View Controller - Bad Example-->
         <scene sceneID="6Ui-aD-E90">
             <objects>
-                <tableViewController id="uRz-Jp-gF7" sceneMemberID="viewController">
+                <tableViewController id="uRz-Jp-gF7" customClass="AKNBadTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="iEp-lA-KLr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="NW4-Xh-fjo">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="NW4-Xh-fjo">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NW4-Xh-fjo" id="jc4-AZ-6Yg">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトル1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="nhC-Ji-9hQ">
+                                            <rect key="frame" x="20" y="11" width="77" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="77" id="HW0-4B-njj"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本文1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="Yvu-M5-sD4">
+                                            <rect key="frame" x="105" y="11" width="195" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="nhC-Ji-9hQ" firstAttribute="leading" secondItem="jc4-AZ-6Yg" secondAttribute="leading" constant="20" symbolic="YES" id="8me-pm-DA7"/>
+                                        <constraint firstItem="nhC-Ji-9hQ" firstAttribute="centerY" secondItem="jc4-AZ-6Yg" secondAttribute="centerY" id="HZJ-F8-Qsv"/>
+                                        <constraint firstItem="nhC-Ji-9hQ" firstAttribute="baseline" secondItem="Yvu-M5-sD4" secondAttribute="baseline" id="Q5u-iX-ZHR"/>
+                                        <constraint firstItem="Yvu-M5-sD4" firstAttribute="leading" secondItem="nhC-Ji-9hQ" secondAttribute="trailing" constant="8" symbolic="YES" id="dg7-0h-NwO"/>
+                                        <constraint firstAttribute="trailing" secondItem="Yvu-M5-sD4" secondAttribute="trailing" constant="20" symbolic="YES" id="eOK-9e-sSL"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>

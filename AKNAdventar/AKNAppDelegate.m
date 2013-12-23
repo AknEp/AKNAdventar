@@ -8,11 +8,16 @@
 
 #import "AKNAppDelegate.h"
 
+#import "AKNEntry.h"
+
 @implementation AKNAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [MagicalRecord cleanUp];
+    [MagicalRecord setupCoreDataStackWithInMemoryStore];
+    [AKNEntry loadExampleDataContinuously];
+    
     return YES;
 }
 							

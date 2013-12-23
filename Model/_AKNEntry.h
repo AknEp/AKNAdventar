@@ -6,6 +6,7 @@
 
 extern const struct AKNEntryAttributes {
 	__unsafe_unretained NSString *body;
+	__unsafe_unretained NSString *createdAt;
 	__unsafe_unretained NSString *title;
 } AKNEntryAttributes;
 
@@ -14,6 +15,7 @@ extern const struct AKNEntryRelationships {
 
 extern const struct AKNEntryFetchedProperties {
 } AKNEntryFetchedProperties;
+
 
 
 
@@ -42,6 +44,16 @@ extern const struct AKNEntryFetchedProperties {
 
 
 
+@property (nonatomic, strong) NSDate* createdAt;
+
+
+
+//- (BOOL)validateCreatedAt:(id*)value_ error:(NSError**)error_;
+
+
+
+
+
 @property (nonatomic, strong) NSString* title;
 
 
@@ -64,6 +76,12 @@ extern const struct AKNEntryFetchedProperties {
 
 - (NSString*)primitiveBody;
 - (void)setPrimitiveBody:(NSString*)value;
+
+
+
+
+- (NSDate*)primitiveCreatedAt;
+- (void)setPrimitiveCreatedAt:(NSDate*)value;
 
 
 
