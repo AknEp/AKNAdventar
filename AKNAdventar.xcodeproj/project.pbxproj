@@ -20,6 +20,8 @@
 		75874CF118687AFC00887E55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75874CD318687AFC00887E55 /* UIKit.framework */; };
 		75874CF918687AFC00887E55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75874CF718687AFC00887E55 /* InfoPlist.strings */; };
 		75874CFB18687AFC00887E55 /* AKNAdventarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75874CFA18687AFC00887E55 /* AKNAdventarTests.m */; };
+		75874D0A18687FD500887E55 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75874D0818687FD500887E55 /* Model.xcdatamodeld */; };
+		75874D0B18687FD500887E55 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75874D0818687FD500887E55 /* Model.xcdatamodeld */; };
 		C70E1FD3F2F5434EA219E45F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AEE8C48781E43D28AE7E583 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,7 @@
 		75874CF618687AFC00887E55 /* AKNAdventarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AKNAdventarTests-Info.plist"; sourceTree = "<group>"; };
 		75874CF818687AFC00887E55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		75874CFA18687AFC00887E55 /* AKNAdventarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKNAdventarTests.m; sourceTree = "<group>"; };
+		75874D0918687FD500887E55 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		7AEE8C48781E43D28AE7E583 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -117,6 +120,7 @@
 			children = (
 				75874CDE18687AFC00887E55 /* AKNAppDelegate.h */,
 				75874CDF18687AFC00887E55 /* AKNAppDelegate.m */,
+				75874D0818687FD500887E55 /* Model.xcdatamodeld */,
 				75874CE118687AFC00887E55 /* Main.storyboard */,
 				75874CE718687AFC00887E55 /* Images.xcassets */,
 				75874CD618687AFC00887E55 /* Supporting Files */,
@@ -288,6 +292,7 @@
 			files = (
 				75874CDC18687AFC00887E55 /* main.m in Sources */,
 				75874CE018687AFC00887E55 /* AKNAppDelegate.m in Sources */,
+				75874D0A18687FD500887E55 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75874CFB18687AFC00887E55 /* AKNAdventarTests.m in Sources */,
+				75874D0B18687FD500887E55 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +516,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		75874D0818687FD500887E55 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				75874D0918687FD500887E55 /* Model.xcdatamodel */,
+			);
+			currentVersion = 75874D0918687FD500887E55 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 75874CC418687AFC00887E55 /* Project object */;
 }
