@@ -28,6 +28,8 @@
 		75874D16186883D300887E55 /* AKNEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 75874D12186883D300887E55 /* AKNEntry.m */; };
 		75874D1A1868859700887E55 /* AKNBadTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75874D191868859700887E55 /* AKNBadTableViewController.m */; };
 		75874D1B1868859700887E55 /* AKNBadTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75874D191868859700887E55 /* AKNBadTableViewController.m */; };
+		75874D1E1868963500887E55 /* AKNGoodTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75874D1D1868963500887E55 /* AKNGoodTableViewController.m */; };
+		75874D1F1868963500887E55 /* AKNGoodTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75874D1D1868963500887E55 /* AKNGoodTableViewController.m */; };
 		C70E1FD3F2F5434EA219E45F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AEE8C48781E43D28AE7E583 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +69,8 @@
 		75874D12186883D300887E55 /* AKNEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKNEntry.m; path = Model/AKNEntry.m; sourceTree = SOURCE_ROOT; };
 		75874D181868859700887E55 /* AKNBadTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKNBadTableViewController.h; path = ViewController/AKNBadTableViewController.h; sourceTree = "<group>"; };
 		75874D191868859700887E55 /* AKNBadTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKNBadTableViewController.m; path = ViewController/AKNBadTableViewController.m; sourceTree = "<group>"; };
+		75874D1C1868963500887E55 /* AKNGoodTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKNGoodTableViewController.h; path = ViewController/AKNGoodTableViewController.h; sourceTree = "<group>"; };
+		75874D1D1868963500887E55 /* AKNGoodTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKNGoodTableViewController.m; path = ViewController/AKNGoodTableViewController.m; sourceTree = "<group>"; };
 		7AEE8C48781E43D28AE7E583 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -186,6 +190,8 @@
 			children = (
 				75874D181868859700887E55 /* AKNBadTableViewController.h */,
 				75874D191868859700887E55 /* AKNBadTableViewController.m */,
+				75874D1C1868963500887E55 /* AKNGoodTableViewController.h */,
+				75874D1D1868963500887E55 /* AKNGoodTableViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -336,6 +342,7 @@
 				75874CDC18687AFC00887E55 /* main.m in Sources */,
 				75874D1A1868859700887E55 /* AKNBadTableViewController.m in Sources */,
 				75874D13186883D300887E55 /* _AKNEntry.m in Sources */,
+				75874D1E1868963500887E55 /* AKNGoodTableViewController.m in Sources */,
 				75874CE018687AFC00887E55 /* AKNAppDelegate.m in Sources */,
 				75874D0A18687FD500887E55 /* Model.xcdatamodeld in Sources */,
 			);
@@ -345,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75874D1F1868963500887E55 /* AKNGoodTableViewController.m in Sources */,
 				75874CFB18687AFC00887E55 /* AKNAdventarTests.m in Sources */,
 				75874D16186883D300887E55 /* AKNEntry.m in Sources */,
 				75874D1B1868859700887E55 /* AKNBadTableViewController.m in Sources */,
